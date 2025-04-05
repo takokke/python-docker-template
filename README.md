@@ -2,15 +2,10 @@
 
 イメージの作成
 ```shell
-$ docker build -t イメージ名:タグ名 .
-```
-
-対話モードで、コンテナを起動
-```shell
-$ docker run -it --rm イメージ名 /bin/bash
+$ docker build -t --no-cache イメージ名:タグ名 .
 ```
 
 ボリュームマウントでcurrent directryを同期
 ```shell
-$ docker run -it -v $(pwd):/app イメージ名
+$ docker run -it --rm -v $(pwd):/app イメージ名
 ```
