@@ -1,9 +1,7 @@
-# coding: utf-8
-# Your code here!
+from enum import Enum
+from fastapi import FastAPI
+from typing import List,Union
 
-def get_full_name(first_name: str, last_name: str):
-    full_name = first_name.title() + "" + last_name.title()
-    return full_name
+from pydantic import BaseModel
 
-
-print(get_full_name("jnede", "doe"))
+app = FastAPI()
