@@ -28,4 +28,6 @@ $ docker run -it --rm -p 3000:8000 -v $(pwd):/app fastapi-image
 アプリの起動
 ```shell
 $ uvicorn main:app --host 0.0.0.0 --reload
+=======
+$ docker run -it --rm -v $(pwd):/app イメージ名
 ```
